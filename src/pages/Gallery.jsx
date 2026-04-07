@@ -4,29 +4,43 @@ import { Paintbrush } from "lucide-react";
 import { Autoplay } from "swiper/modules";
 
 import "swiper/css";
-import { image } from "framer-motion/client";
+
+// ✅ correct imports
+import img1 from "../assets/1.jpg";
+import img2 from "../assets/2.jpg";
+import img3 from "../assets/3.jpg";
+import img4 from "../assets/4.jpg";
+import img5 from "../assets/5.jpg";
+import img6 from "../assets/6.jpg";
+import img7 from "../assets/7.jpg";
+import img8 from "../assets/8.jpg";
+import img9 from "../assets/9.jpg";
+import img10 from "../assets/10.jpg";
+import img11 from "../assets/11.jpg";
+import img12 from "../assets/12.jpg";
+import img13 from "../assets/13.jpg";
+import img14 from "../assets/14.jpg";
+import img16 from "../assets/16.jpg";
 
 export default function Gallery() {
 
+  // ✅ correct array
   const images = [
-    {img: "/src/assets/1.jpg" },
-    {img: "/src/assets/2.jpg" },
-    {img: "/src/assets/3.jpg" },
-    {img: "/src/assets/4.jpg" },
-    {img: "/src/assets/5.jpg" },
-    {img: "/src/assets/6.jpg" },
-    {img: "/src/assets/7.jpg" },
-    {img: "/src/assets/8.jpg" },
-    {img: "/src/assets/9.jpg" },
-    {img: "/src/assets/10.jpg" },
-    {img: "/src/assets/11.jpg" },
-    {img: "/src/assets/12.jpg" },
-    {img: "/src/assets/13.jpg" },
-    {img: "/src/assets/14.jpg" },
-   
-    {img: "/src/assets/16.jpg" },
-
-    
+    { img: img1 },
+    { img: img2 },
+    { img: img3 },
+    { img: img4 },
+    { img: img5 },
+    { img: img6 },
+    { img: img7 },
+    { img: img8 },
+    { img: img9 },
+    { img: img10 },
+    { img: img11 },
+    { img: img12 },
+    { img: img13 },
+    { img: img14 },
+    { img: img16 },
   ];
 
   return (
@@ -49,10 +63,6 @@ export default function Gallery() {
         <h1 className="text-3xl sm:text-5xl font-semibold text-slate-900">
           Our Work
         </h1>
-
-        <p className="mt-4 text-slate-600 text-sm">
-          Real projects. Clean finishes. Premium transformation.
-        </p>
       </div>
 
       {/* SLIDER */}
@@ -61,7 +71,7 @@ export default function Gallery() {
         <Swiper
           modules={[Autoplay]}
           autoplay={{ delay: 2500 }}
-          loop={true}
+          loop
           spaceBetween={20}
           breakpoints={{
             0: { slidesPerView: 1 },
@@ -76,19 +86,11 @@ export default function Gallery() {
                 className="relative overflow-hidden rounded-3xl group"
               >
                 <img
-                  src={item.img}
+                  src={item.img} // ✅ FIXED
                   className="w-full h-72 object-cover rounded-3xl transition duration-500 group-hover:scale-110"
                 />
 
-                {/* overlay */}
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition"></div>
-
-                {/* text */}
-                <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="text-sm font-medium">
-                    {item.title}
-                  </h3>
-                </div>
               </motion.div>
             </SwiperSlide>
           ))}
