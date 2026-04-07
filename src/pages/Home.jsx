@@ -8,6 +8,7 @@ import Testimonials from "../components/Testimonials";
 import BeforeAfter from "../components/BeforeAfter";
 import FAQ from "../components/FAQ";
 
+
 export default function Home() {
   return (
     <div>
