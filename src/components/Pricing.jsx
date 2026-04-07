@@ -45,12 +45,17 @@ export default function Pricing() {
 
           <div className="space-y-3">
             {[
-              ["Royal Paint", "₹35"],
-              ["Plastic Paint", "₹18.5"],
-              ["Tractor Emulsion", "₹16.25"],
-              ["Apex Paint", "₹16.5"],
+              ["Royal Paint", "₹37"],
+              ["Plastic Paint", "₹20"],
+              ["Enamel Paint", "₹20"],
+              ["Tractor Emulsion", "₹17"],
+              ["Apex Paint", "₹17"],
+              ["ACE Paint", "₹15"],
+              ["Rustic Paint", "₹45"],
               ["Velvet Touch", "₹35"],
               ["Distemper", "₹12"],
+              ["Simple Damp Proofing", "₹30"],
+              ["Birla Putty", "₹8.5"],
             ].map((item, i) => (
               <div
                 key={i}
@@ -80,10 +85,10 @@ export default function Pricing() {
 
           <div className="space-y-3">
             {[
-              ["P.U. Polish", "₹230"],
+              ["P.U. Polish", "₹240"],
               ["P.U. Paint", "₹250"],
               ["Deco Paint", "₹170"],
-              ["Melamine Polish", "₹135"],
+              ["Melamine Polish", "₹140"],
               ["Simple Polish", "₹65"],
             ].map((item, i) => (
               <div
