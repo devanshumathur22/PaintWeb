@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -48,6 +49,7 @@ export default function Home() {
           transition={{ delay: 0.4 }}
           className="flex flex-col sm:flex-row gap-3 mt-6 justify-center"
         >
+          {/* CALL */}
           <a
             href="tel:8769158436"
             className="px-5 py-2.5 sm:px-6 sm:py-3 rounded-xl font-medium 
@@ -58,14 +60,15 @@ export default function Home() {
             Get Free Quote
           </a>
 
-          <a
-            href="/services"
+          {/* 🔥 FIXED ROUTING */}
+          <Link
+            to="/services"
             className="px-5 py-2.5 sm:px-6 sm:py-3 rounded-xl border border-white 
                        hover:bg-white hover:text-slate-900 
                        transition text-sm sm:text-base"
           >
             View Services
-          </a>
+          </Link>
         </motion.div>
 
       </motion.div>
@@ -87,6 +90,7 @@ export default function Home() {
           />
         </div>
       </motion.div>
+
     </section>
   );
 }
