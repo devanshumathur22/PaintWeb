@@ -47,12 +47,12 @@ export default function Footer() {
                 <Phone size={16} /> 8769158436
               </a>
 
-              <a href="mailto:info@gmail.com" className="flex items-center justify-center sm:justify-start gap-2 hover:text-white">
-                <Mail size={16} /> info@gmail.com
+              <a href="mailto:sureshpainters@gmail.com" className="flex items-center justify-center sm:justify-start gap-2 hover:text-white">
+                <Mail size={16} /> sureshpainters@gmail.com
               </a>
 
               <div className="flex items-center justify-center sm:justify-start gap-2">
-                <MapPin size={16} /> Your City, India
+                <MapPin size={16} /> jaipur,Rajasthan
               </div>
 
             </div>
